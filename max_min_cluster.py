@@ -8,7 +8,7 @@
 import math
 
 
-def start_cluster(data, t):
+def max_min_cluster(data, t):
     zs = [data[0]]  # 聚类中心集，选取第一个模式样本作为第一个聚类中心Z1
     # 第2步：寻找Z2,并计算阈值T
     T = step2(data, t, zs)
@@ -76,10 +76,9 @@ def get_distance(data1, data2):
         distance += pow((data1[i]-data2[i]), 2)
     return math.sqrt(distance)
 
-
-data = [[0, 0], [3, 8], [1, 1], [2, 2], [5, 3], [4, 8], [6, 3], [5, 4], [6, 4], [7, 5]]
-t = 0.5
-result = start_cluster(data, t)
-for i in range(len(result)):
-    print "----------第" + str(i+1) + "个聚类----------"
-    print result[i]
+# data = [[0, 0], [3, 8], [1, 1], [2, 2], [5, 3], [4, 8], [6, 3], [5, 4], [6, 4], [7, 5]]
+# t = 0.5
+# result = max_min_cluster(data, t)
+# for i in range(len(result)):
+#     print "----------第" + str(i+1) + "个聚类----------"
+#     print result[i]
