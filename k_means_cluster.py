@@ -27,8 +27,9 @@ def step2(data, zs):
     if flag:
         return result
     else:
-        step2(data, new_zs)
-    return step2(data, new_zs)
+        return step2(data, new_zs)
+        # step2(data, new_zs)
+    # return step2(data, new_zs)
 
 
 def is_end(zs, new_zs):
