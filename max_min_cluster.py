@@ -80,5 +80,5 @@ def get_distance(data1, data2):
 # t = 0.5
 # result = max_min_cluster(data, t)
 # for i in range(len(result)):
-#     print "----------第" + str(i+1) + "个聚类----------"
-#     print result[i]
+#     print("----------第" + str(i+1) + "个聚类----------")
+#     print(result[i])

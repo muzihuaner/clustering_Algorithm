@@ -1,5 +1,5 @@
 # coding=utf-8
-
+#层次聚类算法
 from max_min_cluster import get_distance
 
 

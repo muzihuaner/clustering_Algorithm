@@ -5,7 +5,7 @@
 # 聚类结果形式result=[[[],[],...],[[],[],...],...]
 # 其中[]为一个模式样本，[[],[],...]为一个聚类
 
-from Max_Min_Cluster import get_distance, classify
+from max_min_cluster import get_distance, classify
 
 
 def knn_cluster(data, t):
@@ -42,5 +42,5 @@ def get_clusters(data, zs, t):
 # t = 4.5
 # result = knn_cluster(data, t)
 # for i in range(len(result)):
-#     print "----------第" + str(i+1) + "个聚类----------"
-#     print result[i]
+#     print("----------第" + str(i+1) + "个聚类----------")
+#     print(result[i])

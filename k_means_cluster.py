@@ -86,5 +86,5 @@ def classify(data, zs):
 # result = k_means_cluster(data, k)
 
 # for i in range(len(result)):
-#     print "----------第" + str(i+1) + "个聚类----------"
-#     print result[i]
+#     print("----------第" + str(i+1) + "个聚类----------")
+#     print(result[i])

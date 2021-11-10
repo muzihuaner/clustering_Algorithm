@@ -12,6 +12,8 @@
 
 import math
 
+from distlib.compat import raw_input
+
 from k_means_cluster import classify, get_newcluster
 from max_min_cluster import get_distance
 
@@ -96,7 +98,7 @@ class IsoData(object):
             self.step11_12_13_14()
         elif self.nc <= self.K / 2:
             self.step8_9_10()
-        elif (self.current_i % 2 is 0) or self.nc >= 2 * self.K:
+        elif (self.current_i % 2 == 0) or self.nc >= 2 * self.K:
             self.step11_12_13_14()
 
     def step8_9_10(self):
